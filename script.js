@@ -17,3 +17,11 @@ function divide(a,b) {
 function operate(operator, a, b) {
     operator(a,b)
 }
+
+//4th instruction
+
+let displayValue = ""
+
+function getNumbers(num) {
+    displayValue += num.textContent
+}
