@@ -25,3 +25,10 @@ let displayValue = ""
 function getNumbers(num) {
     displayValue += num.textContent
 }
+
+//adding text contents to classes
+const button = document.querySelectorAll(".button")
+button.forEach(btn => {
+    btn.classList.add(`item-${btn.textContent}`)
+    // btn.style.gridArea = btn.textContent
+}) 

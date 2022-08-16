@@ -23,25 +23,27 @@ body {
 
 .screen {
     width: 100%;
-    height: 300px;
+    height: 37%;
 }
 
 .buttons {
-    width: 100%;
+    height:63%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 40px 40px 40px;
 }
 
 .big-button {
-    width: 200px !important;
-    height: 100px;
     color: black !important;
+    background-color: #D4D4D2;
+    /* aspect-ratio: 2 !important; */
+    height: 75px !important;
+    width: 100%;
 }
 
 .button {
-    width: 100px;
-    height: 100px;
     border-radius: 100px;
     display: flex;
     justify-content: center;
@@ -50,6 +52,7 @@ body {
     font-family: roboto;
     font-weight: 100;
     font-size: 3rem;
+    aspect-ratio: 1;
 }
 
 .num {
@@ -60,6 +63,18 @@ body {
     background-color: #FF9500;
 }
 
-.command {
-    background-color: #D4D4D2;
+.item-Clear {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 2;
 }
+
+.item-Delete {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-end: 2;
+
+}
+
